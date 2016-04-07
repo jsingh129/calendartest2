@@ -1,9 +1,10 @@
 <br>
 <br>
-<br>
+
+<div class=wrapper-calendar>
     <li><%= link_to 'New Event', new_event_path %></li>
 
-<br>
+
 <div class='simple-calendar'>
     <%= month_calendar events: @events do |day,events| %>
         <%= day %>
@@ -14,6 +15,7 @@
     </div>
     <% end %>
     <% end %>
+</div>
 
 
 

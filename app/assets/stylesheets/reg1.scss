@@ -28,7 +28,19 @@ body {
   padding: 20px;
   background: rgba(4, 40, 68, 0.85);
 }
+.wrapper2 {
+  align-items: center;
+  justify-content: center;
 
+  padding: 50px;
+  background: #ffffff;
+}
+.wrapper-calendar{
+  background: rgba(4, 40, 68, 0.85);
+  height: 100%;
+  width: 100%;
+  
+}
 .login {
   border-radius: 2px 2px 5px 5px;
   padding: 10px 20px 20px 20px;
