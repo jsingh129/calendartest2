@@ -12,8 +12,26 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap
+//= require moment
+//= require fullcalendar
 //= require_tree .
+
+$(document).ready(function() {
+   $("#calendar").fullCalendar({
+     theme: true,
+     header: {
+     left: "prev,next today",
+     center: "title",
+     right: "month,agendaWeek,agendaDay"
+     },
+     events: 'events.json',
+     defaultView: "month",
+     height: 1000,
+     slotMinutes: 15
+  });
+});
 
 
 

@@ -35,8 +35,9 @@ gem 'paperclip'
 gem 'bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-
+gem 'momentjs-rails', '~> 2.5.0'
+gem 'fullcalendar-rails'
+gem 'jquery-ui-rails'
 gem 'rspec'
 
 gem 'dashing-rails'
@@ -45,7 +46,7 @@ gem 'puma'
 
 gem 'omniauth-facebook'
 
-gem 'simple_calendar', '~> 2.0'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
