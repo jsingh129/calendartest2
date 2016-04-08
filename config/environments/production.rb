@@ -3,13 +3,12 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.action_mailer.default_url_options = { :host => "yourhost" }
-  config.assets.precompile += %w(fullcalendar.js)
   config.cache_classes = true
   config.eager_load = true
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  config.serve_static_files = true
-  config.assets.js_compressor = Uglifier.new(mangle: false)  
+  config.serve_static_files = false
+  config.assets.js_compressor = :uglifier 
   config.assets.compile = true
   config.assets.digest = true
   config.log_level = :debug
